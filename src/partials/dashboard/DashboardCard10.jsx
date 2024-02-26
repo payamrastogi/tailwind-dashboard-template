@@ -13,41 +13,41 @@ function DashboardCard10() {
       id: '0',
       image: Image01,
       name: 'Alex Shatov',
-      email: 'alexshatov@gmail.com',
-      location: '🇺🇸',
-      spent: '$2,890.66',
+      invested: '$2,890.66',
+      current_value: '$5677.90',
+      pnl_perc: '+57.9%',
     },
     {
       id: '1',
       image: Image02,
       name: 'Philip Harbach',
-      email: 'philip.h@gmail.com',
-      location: '🇩🇪',
-      spent: '$2,767.04',
+      invested: '$2,890.66',
+      current_value: '$5677.90',
+      pnl_perc: '+57.9%',
     },
     {
       id: '2',
       image: Image03,
       name: 'Mirko Fisuk',
-      email: 'mirkofisuk@gmail.com',
-      location: '🇫🇷',
-      spent: '$2,996.00',
+      invested: '$2,890.66',
+      current_value: '$5677.90',
+      pnl_perc: '+57.9%',
     },
     {
       id: '3',
       image: Image04,
       name: 'Olga Semklo',
-      email: 'olga.s@cool.design',
-      location: '🇮🇹',
-      spent: '$1,220.66',
+      invested: '$2,890.66',
+      current_value: '$5677.90',
+      pnl_perc: '+57.9%',
     },
     {
       id: '4',
       image: Image05,
       name: 'Burak Long',
-      email: 'longburak@gmail.com',
-      location: '🇬🇧',
-      spent: '$1,890.66',
+      invested: '$2,890.66',
+      current_value: '$5677.90',
+      pnl_perc: '+57.9%',
     },
   ];
 
@@ -68,13 +68,13 @@ function DashboardCard10() {
                   <div className="font-semibold text-left">Name</div>
                 </th>
                 <th className="p-2 whitespace-nowrap">
-                  <div className="font-semibold text-left">Email</div>
+                  <div className="font-semibold text-left">Invested Amount</div>
                 </th>
                 <th className="p-2 whitespace-nowrap">
-                  <div className="font-semibold text-left">Spent</div>
+                  <div className="font-semibold text-left">Current Value</div>
                 </th>
                 <th className="p-2 whitespace-nowrap">
-                  <div className="font-semibold text-center">Country</div>
+                  <div className="font-semibold text-center">Profit/Loss Percentage</div>
                 </th>
               </tr>
             </thead>
@@ -93,13 +93,13 @@ function DashboardCard10() {
                         </div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="text-left">{customer.email}</div>
+                        <div className="text-left">{customer.invested}</div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="text-left font-medium text-green-500">{customer.spent}</div>
+                        <div className="text-left font-medium text-green-500">{customer.current_value}</div>
                       </td>
                       <td className="p-2 whitespace-nowrap">
-                        <div className="text-lg text-center">{customer.location}</div>
+                        <div className="text-lg text-center">{customer.pnl_perc}</div>
                       </td>
                     </tr>
                   )
